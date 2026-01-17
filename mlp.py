@@ -12,14 +12,14 @@ def set_seed(seed=42):
     np.random.seed(seed)
     torch.manual_seed(seed)
     
-
+  
 def get_input_tensors() -> tuple:
     '''
     Converts numpy arrays to PyTorch tensors.
     '''
     x = np.array([ [0, 0], [0, 1], [1, 0], [1, 1] ])
     x_tensor = torch.tensor(x, dtype=torch.float32)
-
+    
     # Define the expected output labels (y) as a NumPy array of shape (4, 1)
     # and convert this array into a 2D tensor.
     # Implement your code here
